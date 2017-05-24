@@ -43,15 +43,14 @@
   </div>
 
   <script>
-    document.ready(function() {
+    $(document).ready(function() {
       $('.navigable').on('click', function(e) {
         $('.navigable').each(function(){
           if ($(this).hasClass('active')) {
             $(this).removeClass('active');
           }
         })
-        this.addClass('active');
-
+        $(this).addClass('active');
       })
     })
   </script>
